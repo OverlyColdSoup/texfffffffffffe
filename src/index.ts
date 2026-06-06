@@ -104,7 +104,7 @@ export default {
               // Show the image
               const blob = await response.blob();
               const url = URL.createObjectURL(blob);
-              imageContainer.innerHTML = `<img src="${url}" alt="Generated Image"><p class="preview">✅ Generation complete!</p>`;
+              imageContainer.innerHTML = '<img src="' + url + '" alt="Generated Image"><p class="preview">✅ Generation complete!</p>';
               status.innerText = '✅ Success!';
             } else {
               // Show error message
